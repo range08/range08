@@ -2,9 +2,7 @@
 
 # Range
 
-### 소프트웨어 개발자
-
-**게임 개발, 개발 도구, 자동화, 인프라**를 중심으로 실용적인 소프트웨어를 만들고 있습니다.
+개발하면서 생기는 불편한 점을 직접 고치거나, 궁금한 걸 실제 프로젝트로 만들어보는 걸 좋아합니다.
 
 [![GitHub](https://img.shields.io/badge/GitHub-range08-181717?style=for-the-badge&logo=github)](https://github.com/range08)
 
@@ -12,77 +10,57 @@
 
 ---
 
-## 소개
+## About Me
 
-프로토타입을 만드는 데서 끝내지 않고, 시스템 설계부터 구현, 실제 동작 검증, 예외 상황 수정, 유지보수까지 이어지는 개발을 지향합니다.
+Unity 게임 개발, 서버 운영, 자동화 도구 제작을 주로 하고 있습니다.
 
-현재 주로 다루는 분야는 다음과 같습니다.
+기능만 돌아가게 만드는 것보다 직접 테스트하면서 이상한 부분을 찾고, 구조를 다시 정리하는 과정을 좋아합니다.  
+최근에는 AI 도구를 개발 환경에 연결해서 실제 작업에 활용하는 방법도 많이 실험하고 있습니다.
 
-- **Unity와 C#**을 활용한 게임 시스템 개발
-- **AI 보조 개발 워크플로우**와 개발 도구 제작
-- **Python, TypeScript, Node.js** 기반 백엔드 및 자동화
-- **Docker, CI/CD, Linux** 기반 서버 및 인프라 운영
-
-## 대표 프로젝트
+## Projects
 
 ### [Brick Breaker](https://github.com/range08/Brick-Breaker)
 
-**Unity 6.3 LTS와 C#**으로 제작한 모바일 세로형 2D 블록 브레이커 게임입니다.
+Unity 6.3 LTS와 C#으로 만든 모바일 2D 블록 브레이커 게임입니다.
 
-멀티볼 순차 발사, CircleCast 기반 궤적 예측, Object Pooling, 라운드 진행, 보너스 블록, Fever 시스템, 자동 게임 속도 조절, 플레이 테스트 기반 난이도 조정 등을 구현했습니다.
+처음에는 단순한 블록 깨기 게임으로 시작했고, 만들면서 멀티볼, 궤적 예측, 라운드 진행, +1 블록, Fever, 공 회수, 자동 배속 같은 기능을 하나씩 추가했습니다.
+
+특히 공 발사 간격이나 회수 방식처럼 직접 플레이했을 때 어색한 부분을 계속 수정하면서 다듬었습니다.
 
 `Unity` `C#` `2D Physics` `New Input System` `Object Pooling`
 
 ### [Range Remote](https://github.com/range08/range-remote)
 
-ChatGPT 플러그인에서 사용할 수 있도록 설계한 오픈소스 **Remote MCP 서비스**입니다.
+ChatGPT에서 제 PC나 서버를 직접 다룰 수 있게 만들고 있는 Remote MCP 프로젝트입니다.
 
-컴퓨터나 서버에서 outbound-only agent를 실행하고, 파일 시스템 접근, Git 상태 확인, 파일 수정, 선택적 셸 실행 기능을 제한된 권한으로 제공합니다. OAuth 2.1 / OIDC, PKCE, JWT 인증, WebSocket 기반 장치 연결, 로컬 정책 기반 접근 제어를 포함합니다.
+로컬 에이전트가 서버에 먼저 연결하는 구조라 외부에서 PC 쪽 포트를 열 필요가 없고, 파일 확인, Git 상태 확인, 파일 수정, 선택적 셸 실행 등을 MCP 도구로 제공합니다.
+
+OAuth 2.1 / OIDC, PKCE, JWT, WebSocket을 사용하고 있고, 파일 접근 범위나 셸 실행 여부는 에이전트 쪽에서 제한하도록 만들었습니다.
 
 `TypeScript` `Node.js` `MCP` `OAuth 2.1` `WebSocket` `Docker`
 
-## 기술 스택
+## Tech Stack
 
-### 언어
+### Languages
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![C%23](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000000)
 
-### 애플리케이션 · 게임 개발
+### Tools
 
 ![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-
-### 인프라 · 개발 워크플로우
-
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=000000)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 
-## 개발 방향
+## 요즘 하는 것
 
-- 역할과 책임이 명확한 구조로 시스템 설계
-- 정상 동작뿐 아니라 실제 실행 경로와 예외 상황까지 검증
-- CI, 배포, 운영 과정을 재현 가능하게 유지
-- 불필요한 복잡성과 유지보수 비용 최소화
-- 보안 기본값과 실패 처리까지 설계의 일부로 고려
+- Unity 프로젝트 만들고 플레이하면서 계속 수정하기
+- Linux 서버에서 Docker 서비스 운영하기
+- GitHub Actions와 self-hosted runner 정리하기
+- AI 도구를 개발 환경에 직접 연결해보기
 
-## 현재 관심 분야
-
-- 원격 개발 및 AI 보조 개발 워크플로우 개선
-- Unity 기반 게임 시스템 설계와 구현
-- 개발, 테스트, 배포 자동화
-- 애플리케이션, 서버, AI 도구를 연결하는 소프트웨어 시스템
-
----
-
-<div align="center">
-
-**만들고, 검증하고, 개선합니다.**
-
-</div>
